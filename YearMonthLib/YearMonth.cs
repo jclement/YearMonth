@@ -5,7 +5,7 @@ namespace YearMonthLib
     /// <summary>
     /// Very simple immutable class to handle Year/Month data structure.  
     /// </summary>
-    public struct YearMonth : IEquatable<YearMonth>, IComparable<YearMonth> 
+    public struct YearMonth : IEquatable<YearMonth>, IComparable<YearMonth>
     {
 
         /// <summary>
@@ -94,15 +94,59 @@ namespace YearMonthLib
             if (Value > other.Value) return 1;
             return 0;
         }
-
+        
         public override int GetHashCode()
         {
             return Value.GetHashCode();
         }
         
+        /// <summary>
+        /// Convert to string using standard format "yyyy MMM"
+        /// </summary>
+        /// <returns>YearMonth as formatted string</returns>
         public override string ToString()
         {
             return AsDateTime().ToString("yyyy MMM");
+        }
+        
+        /// <summary>
+        /// Convert to string using custom format
+        /// </summary>
+        /// <param name="fmt">DateTime format string</param>
+        /// <returns>YearMonth as formatted string</returns>
+        public string ToString(string fmt)
+        {
+            return AsDateTime().ToString(fmt);
+        }
+
+        public static bool operator > (YearMonth a, YearMonth b)
+        {
+            return a.Value > b.Value;
+        }
+        
+        public static bool operator < (YearMonth a, YearMonth b)
+        {
+            return a.Value < b.Value;
+        }
+        
+        public static bool operator >= (YearMonth a, YearMonth b)
+        {
+            return a.Value >= b.Value;
+        }
+        
+        public static bool operator <= (YearMonth a, YearMonth b)
+        {
+            return a.Value <= b.Value;
+        }
+        
+        public static bool operator == (YearMonth a, YearMonth b)
+        {
+            return a.Value == b.Value;
+        }
+        
+        public static bool operator != (YearMonth a, YearMonth b)
+        {
+            return a.Value != b.Value;
         }
     }
 }
