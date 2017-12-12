@@ -1,9 +1,8 @@
 ﻿using System;
-using System.Linq.Expressions;
 using Xunit;
-using YearMonthLib;
+using jfry.YearMonthLib;
 
-namespace YearMonthTest
+namespace jfry.YearMonthTest
 {
     public class Tests
     {

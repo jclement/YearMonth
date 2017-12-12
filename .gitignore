@@ -5,3 +5,4 @@ YearMonthLib/obj
 YearMonthTest/bin
 YearMonthTest/obj
 packages
+*.nupkg

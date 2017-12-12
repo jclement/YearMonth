@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>ca.jfry.dotnet.YearMonthLib</id>
+    <id>jfry.YearMonthLib</id>
     <version>1.0</version>
     <title>YearMonthLib</title>
     <authors>jclement</authors>
