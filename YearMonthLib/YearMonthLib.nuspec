@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>jfry.YearMonthLib</id>
+    <id>jclement.YearMonthLib</id>
     <version>1.0</version>
     <title>YearMonthLib</title>
     <authors>jclement</authors>

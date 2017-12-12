@@ -1,8 +1,8 @@
 ﻿using System;
 using Xunit;
-using jfry.YearMonthLib;
+using jclement.YearMonthLib;
 
-namespace jfry.YearMonthTest
+namespace jclement.YearMonthTest
 {
     public class Tests
     {

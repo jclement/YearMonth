@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace jfry.YearMonthLib
+namespace jclement.YearMonthLib
 {
     /// <summary>
     /// Very simple immutable class to handle Year/Month data structure.  
