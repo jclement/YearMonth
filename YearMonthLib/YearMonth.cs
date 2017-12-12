@@ -1,11 +1,11 @@
 ﻿using System;
 
-namespace YearMonth
+namespace YearMonthLib
 {
     /// <summary>
     /// Very simple immutable class to handle Year/Month data structure.  
     /// </summary>
-    public class YearMonth : IEquatable<YearMonth>, IComparable<YearMonth> 
+    public struct YearMonth : IEquatable<YearMonth>, IComparable<YearMonth> 
     {
 
         /// <summary>

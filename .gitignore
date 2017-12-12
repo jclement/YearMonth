@@ -1,6 +1,7 @@
 workspace.xml
-YearMonth/bin
-YearMonth/obj
+.vs/
+YearMonthLib/bin
+YearMonthLib/obj
 YearMonthTest/bin
 YearMonthTest/obj
 packages

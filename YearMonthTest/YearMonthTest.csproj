@@ -8,7 +8,7 @@
     <ProjectTypeGuids>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>YearMonthTest</RootNamespace>
+    <RootNamespace>ca.jfry.dotnet.YearMonthTest</RootNamespace>
     <AssemblyName>YearMonthTest</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -55,9 +55,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\YearMonth\YearMonth.csproj">
-      <Project>{86876037-0EF7-495F-9F04-283502DC8C0C}</Project>
-      <Name>YearMonth</Name>
+    <ProjectReference Include="..\YearMonthLib\YearMonthLib.csproj">
+      <Project>{86876037-0ef7-495f-9f04-283502dc8c0c}</Project>
+      <Name>YearMonthLib</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.0.0
 MinimumVisualStudioVersion = 10.0.0.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YearMonth", "YearMonth\YearMonth.csproj", "{86876037-0EF7-495F-9F04-283502DC8C0C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YearMonthLib", "YearMonthLib\YearMonthLib.csproj", "{86876037-0EF7-495F-9F04-283502DC8C0C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YearMonthTest", "YearMonthTest\YearMonthTest.csproj", "{BC872183-19B7-4FB8-9E47-394EC4CB4E2A}"
 EndProject

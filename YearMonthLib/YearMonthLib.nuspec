@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>ca.jfry.dotnet.YearMonth</id>
+    <id>ca.jfry.dotnet.YearMonthLib</id>
     <version>1.0</version>
-    <title>YearMonth</title>
+    <title>YearMonthLib</title>
     <authors>jclement</authors>
     <owners>jclement</owners>
     <licenseUrl>https://github.com/jclement/YearMonth/blob/master/LICENSE/</licenseUrl>
