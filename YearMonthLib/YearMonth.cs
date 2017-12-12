@@ -119,6 +119,13 @@ namespace YearMonthLib
             return AsDateTime().ToString(fmt);
         }
 
+        public override bool Equals(object obj)
+        {
+            if (obj is YearMonth objVal) 
+                return Value.Equals(objVal);
+            return false;
+        }
+
         public static bool operator > (YearMonth a, YearMonth b)
         {
             return a.Value > b.Value;
