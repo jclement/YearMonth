@@ -32,6 +32,13 @@ namespace jclement.YearMonthTest
         }
         
         [Fact]
+        public void TestAsDateTimeUtc()
+        {
+            Assert.Equal(new DateTime(2011,2,1, 0, 0, 0, DateTimeKind.Utc), new YearMonth(2011,2).AsDateTimeUtc());
+            Assert.True(new YearMonth(2011,2).AsDateTimeUtc().Kind == DateTimeKind.Utc);
+        }
+        
+        [Fact]
         public void TestMath()
         {
             Assert.Equal(new DateTime(2012,2,1), new YearMonth(2011,2).AddYears(1).AsDateTime());
@@ -79,19 +86,13 @@ namespace jclement.YearMonthTest
             var y1 = new YearMonth(2011,1);
             var y2 = new YearMonth(2011,1);
             var y3 = new YearMonth(2011,2);
+            
             var d1 = new Dictionary<YearMonth, bool>();
             d1.Add(y1, true);
             Assert.True(d1.ContainsKey(y2));
             Assert.False(d1.ContainsKey(y3));
             
             Assert.Equal(new Tuple<YearMonth, string>(y1, "a").GetHashCode(), new Tuple<YearMonth, string>(y2, "a").GetHashCode());
-            
-            var d2 = new Dictionary<Tuple<YearMonth, string>, bool>();
-            d2.Add(new Tuple<YearMonth, string>(y1, "a"), true);
-            Assert.True(d2.ContainsKey(new Tuple<YearMonth, string>(y1, "a")));
-            Assert.True(d2.ContainsKey(new Tuple<YearMonth, string>(y2, "a")));
-            Assert.False(d2.ContainsKey(new Tuple<YearMonth, string>(y3, "a")));
-            Assert.False(d2.ContainsKey(new Tuple<YearMonth, string>(y2, "b")));
         }
     }
 }

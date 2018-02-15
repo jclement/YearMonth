@@ -67,6 +67,15 @@ namespace jclement.YearMonthLib
         {
             return new DateTime(Value/12, 1+Value%12,1);
         }
+        
+        /// <summary>
+        /// Return value as DateTime on first of YearMonth with Kind set to UTC
+        /// </summary>
+        /// <returns></returns>
+        public DateTime AsDateTimeUtc()
+        {
+            return new DateTime(Value/12, 1+Value%12,1, 0, 0, 0, DateTimeKind.Utc);
+        }
 
         /// <summary>
         /// Return YearMonth value as number of months since Jan 0000
