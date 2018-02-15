@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using Xunit;
 using jclement.YearMonthLib;
 
@@ -70,6 +71,27 @@ namespace jclement.YearMonthTest
         {
             Assert.Equal(new DateTime(2011,2,1).ToString("yyyy MMM"), new YearMonth(2011,2).ToString());
             Assert.Equal(new DateTime(2011,2,1).ToString("MMMM yyyy"), new YearMonth(2011,2).ToString("MMMM yyyy"));
+        }
+
+        [Fact]
+        public void TestDictionaryKey()
+        {
+            var y1 = new YearMonth(2011,1);
+            var y2 = new YearMonth(2011,1);
+            var y3 = new YearMonth(2011,2);
+            var d1 = new Dictionary<YearMonth, bool>();
+            d1.Add(y1, true);
+            Assert.True(d1.ContainsKey(y2));
+            Assert.False(d1.ContainsKey(y3));
+            
+            Assert.Equal(new Tuple<YearMonth, string>(y1, "a").GetHashCode(), new Tuple<YearMonth, string>(y2, "a").GetHashCode());
+            
+            var d2 = new Dictionary<Tuple<YearMonth, string>, bool>();
+            d2.Add(new Tuple<YearMonth, string>(y1, "a"), true);
+            Assert.True(d2.ContainsKey(new Tuple<YearMonth, string>(y1, "a")));
+            Assert.True(d2.ContainsKey(new Tuple<YearMonth, string>(y2, "a")));
+            Assert.False(d2.ContainsKey(new Tuple<YearMonth, string>(y3, "a")));
+            Assert.False(d2.ContainsKey(new Tuple<YearMonth, string>(y2, "b")));
         }
     }
 }
