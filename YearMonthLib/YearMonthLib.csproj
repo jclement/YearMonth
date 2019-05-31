@@ -2,7 +2,8 @@
   <PropertyGroup>
     <ProjectTypeGuids>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <RootNamespace>jclement.YearMonthLib</RootNamespace>
-    <TargetFramework>net45</TargetFramework>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <AssemblyTitle>YearMonth</AssemblyTitle>
     <Product>YearMonth</Product>
     <Description>An astoundingly simple .NET data structure to represent a Year/Month</Description>
