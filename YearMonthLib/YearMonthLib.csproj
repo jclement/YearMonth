@@ -2,7 +2,7 @@
   <PropertyGroup>
     <ProjectTypeGuids>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <RootNamespace>jclement.YearMonthLib</RootNamespace>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <AssemblyTitle>YearMonth</AssemblyTitle>
     <Product>YearMonth</Product>
