@@ -6,4 +6,8 @@ dist: xenial
 install:
   - dotnet restore YearMonth.sln
 script:
+  - ls
+  - ls /usr/bin
+  - MSBuild
+  - MSBuild.exe
   - msbuild /p:Configuration=Release YearMonth.sln
