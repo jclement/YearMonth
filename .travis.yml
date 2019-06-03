@@ -2,7 +2,7 @@ language: csharp
 solution: YearMonth.sln
 mono: none
 dotnet: 2.0.0
- install:
+install:
   - dotnet restore YearMonth.sln
 script:
   - msbuild /p:Configuration=Release YearMonth.sln
