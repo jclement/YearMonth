@@ -8,6 +8,7 @@
     <Product>YearMonth</Product>
     <Description>An astoundingly simple .NET data structure to represent a Year/Month</Description>
     <Copyright>Copyright 2017</Copyright>
+    <Version>1.2</Version>
     <OutputPath>bin\$(Configuration)\</OutputPath>
     <Authors>jclement</Authors>
     <PackageId>jclement.YearMonthLib</PackageId>
